@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 
-var lintDirs = ['./app/**/*.js', '!./app/node_modules/**', '!./app/static/lib/**' ];
+var lintDirs = ['./app/**/*.js', '!./app/node_modules/**', '!./node_modules/**', '!./app/static/lib/**' ];
 
 gulp.task('lint', function(){
 	return gulp.src(lintDirs)
